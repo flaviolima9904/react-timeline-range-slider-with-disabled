@@ -2,7 +2,7 @@
 ![demo gif](./demo.gif)
 ### Installation
 
-     npm i react-timeline-range-slider
+     npm i react-timeline-range-slider-with-disabled
 ### Props
 
 | Prop | Type | Default | Description|
