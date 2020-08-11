@@ -1,6 +1,6 @@
 {
   "name": "react-timeline-range-slider-with-disabled",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Time Slider component for React , ",
   "author": "Flavio Lima <flaviolima9904@gmail.com>",
   "main": "dist/index.js",
