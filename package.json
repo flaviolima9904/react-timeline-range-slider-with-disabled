@@ -1,14 +1,14 @@
 {
-  "name": "react-timeline-range-slider",
-  "version": "1.0.13",
+  "name": "react-timeline-range-slider-with-disabled",
+  "version": "1.0.3",
   "description": "Time Slider component for React , ",
-  "author": "Elizaveta Shkodkina <lizashkodkina@gmail.com>",
+  "author": "Flavio Lima <flaviolima9904@gmail.com>",
   "main": "dist/index.js",
   "license": "MIT",
-  "homepage": "https://github.com/lizashkod/react-time-range-slider",
+  "homepage": "https://github.com/flaviolima9904/react-timeline-range-slider-with-disabled",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lizashkod/react-time-range-slider"
+    "url": "git+https://github.com/flaviolima9904/react-timeline-range-slider-with-disabled.git"
   },
   "keywords": [
     "react-component",
@@ -63,5 +63,8 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
+  },
+  "bugs": {
+    "url": "https://github.com/flaviolima9904/react-timeline-range-slider-with-disabled/issues"
   }
 }

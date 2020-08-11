@@ -18,10 +18,11 @@ const Handle = ({
         aria-valuemin={min}
         aria-valuemax={max}
         aria-valuenow={value}
+
         className={`react_time_range__handle_container${disabled ? '__disabled' : ''}`}
         style={{ left: leftPosition }}
       >
-        <div className={`react_time_range__handle_marker${error ? '__error' : ''}`} />
+        <div id={`react_time_range__handle_marker${id}`} className={`react_time_range__handle_marker${error ? '__error' : ''}`} />
       </div>
     </>
   )

@@ -10,6 +10,7 @@ import Tick from './components/Tick'
 import Handle from './components/Handle'
 
 import './styles/index.scss'
+import TooltipRail from './components/TooTipRail'
 
 const formatTick = ms => format(new Date(ms), 'HH:mm')
 
@@ -89,7 +90,8 @@ class TimeRange extends React.Component {
       containerClassName,
       error,
       step,
-      disabled
+      disabled,
+      tootip
     } = this.props
 
     const domain = timelineInterval.map(t => Number(t))
@@ -104,12 +106,13 @@ class TimeRange extends React.Component {
           domain={domain}
           onUpdate={this.onUpdate}
           onChange={this.onChange}
-          disabled={!!disabled}
+          disabled={disabled}
           values={selectedInterval.map(t => +t)}
           rootStyle={{ position: 'relative', width: '100%' }}
         >
           <Rail>
             {({ getRailProps }) => <SliderRail className={sliderRailClassName} getRailProps={getRailProps} />}
+            {!!tootip && (({ getRailProps }) => <TooltipRail className={sliderRailClassName} getRailProps={getRailProps} />)}
           </Rail>
 
           <Handles>
@@ -203,6 +206,7 @@ TimeRange.defaultProps = {
   step: 1000 * 60 * 30,
   ticksNumber: 48,
   error: false,
+  disabled: false,
 }
 
 export default TimeRange

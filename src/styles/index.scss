@@ -124,3 +124,19 @@ $react-time-range--track--disabled: repeating-linear-gradient( -45deg, transpare
     font-family: sans-serif;
   }
 }
+
+.react_time_tootip__container {
+  position: absolute;
+  width: 100%;
+  transform: translate(0%, -50%);
+  height: 40px;
+  z-index: 300;
+}
+.react_time_tootip__center {
+  position: absolute;
+  width: 100%;
+  transform: translate(0%, -50%);
+  height: 14px;
+  border-radius: 7px;
+  background-color: rgb(155,155,155);
+}

@@ -1,7 +1,9 @@
+### Original Component
+https://github.com/lizashkod/react-timeline-range-slider
+
 ### react-timeline-range-slider
 ![demo gif](./demo.gif)
 ### Installation
-
      npm i react-timeline-range-slider-with-disabled
 ### Props
 
