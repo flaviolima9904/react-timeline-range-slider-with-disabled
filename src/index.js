@@ -10,7 +10,7 @@ import Tick from './components/Tick'
 import Handle from './components/Handle'
 
 import './styles/index.scss'
-import TooltipRail from './components/TooTipRail'
+// import TooltipRail from './components/TooTipRail'
 
 const formatTick = ms => format(new Date(ms), 'HH:mm')
 
@@ -112,7 +112,6 @@ class TimeRange extends React.Component {
         >
           <Rail>
             {({ getRailProps }) => <SliderRail className={sliderRailClassName} getRailProps={getRailProps} />}
-            {!!tootip && (({ getRailProps }) => <TooltipRail className={sliderRailClassName} getRailProps={getRailProps} />)}
           </Rail>
 
           <Handles>
@@ -124,6 +123,7 @@ class TimeRange extends React.Component {
                     key={handle.id}
                     handle={handle}
                     domain={domain}
+                    disabled={disabled}
                     getHandleProps={getHandleProps}
                   />
                 ))}
