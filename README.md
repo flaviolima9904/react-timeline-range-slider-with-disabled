@@ -16,6 +16,7 @@ https://github.com/lizashkod/react-timeline-range-slider
 |step|number|48|Number of milliseconds between steps|
 |ticksNumber|number|1800000|Number of steps on the timeline (the default value is 30 minutes)|
 |error|bool|false|Is the selected interval is not valid|
+|disabled|bool|false|Disable Slide
 |onUpdateCallback|function|||
 |onChangeCallback|function|||
 ### Example
